@@ -135,7 +135,6 @@ server.patch('/edit-item/:id', async (req, resp) =>{
       
 
       resp.status(200).json({
-        message:"Item deleted",
-        deletedItem
+        message:"Item deleted"
       })
  })
