@@ -130,7 +130,7 @@ server.patch('/edit-item/:id', async (req, resp) =>{
 
  server.delete('/delete-item/:id', async (req, resp) =>{
        const {id} = req.params
-      const deletedItem = await StudentItem.findById(id)
+      const deletedItem = await StudentItem.findByIdAndDelete(id)
 
       
 
